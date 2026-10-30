@@ -1,0 +1,2 @@
+The OpenMP runtime library from the LLVM project, used by clang's
+-fopenmp support. Provides omp.h and libomp.

@@ -1,0 +1,6 @@
+include/omp.h
+include/ompx.h
+lib/cmake/
+lib/cmake/openmp/
+lib/cmake/openmp/FindOpenMPTarget.cmake
+@lib lib/libomp.so.${LIBomp_VERSION}

@@ -1,0 +1,12 @@
+Index: openmp/runtime/src/CMakeLists.txt
+--- openmp/runtime/src/CMakeLists.txt.orig
++++ openmp/runtime/src/CMakeLists.txt
+@@ -233,7 +233,7 @@ elseif("${CMAKE_SYSTEM_NAME}" MATCHES "AIX")
+   )
+ else()
+   set_target_properties(omp PROPERTIES
+-    PREFIX "" SUFFIX "" OUTPUT_NAME "${LIBOMP_LIB_FILE}"
++    PREFIX "" SUFFIX "" OUTPUT_NAME "${LIBOMP_LIB_FILE}.${OPENBSD_LIBOMP_VERSION}"
+     LINK_FLAGS "${LIBOMP_CONFIGURED_LDFLAGS}"
+     LINKER_LANGUAGE ${LIBOMP_LINKER_LANGUAGE}
+   )
